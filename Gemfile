@@ -42,3 +42,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'faker'
 gem 'fast_jsonapi'
 gem 'omniauth-google-oauth2'
+gem 'httparty'
+gem 'securerandom'
+
+
