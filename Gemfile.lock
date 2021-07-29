@@ -210,6 +210,7 @@ DEPENDENCIES
   faker
   fast_jsonapi
   httparty
+  jwt
   listen (~> 3.3)
   omniauth-google-oauth2
   pg (~> 1.1)

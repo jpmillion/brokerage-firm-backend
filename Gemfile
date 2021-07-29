@@ -44,5 +44,6 @@ gem 'fast_jsonapi'
 gem 'omniauth-google-oauth2'
 gem 'httparty'
 gem 'securerandom'
+gem 'jwt'
 
 
