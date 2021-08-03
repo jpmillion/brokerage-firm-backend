@@ -8,4 +8,11 @@ class Api::V1::SessionsController < ApplicationController
             render json: { errors: 'Invalid email or password' }
         end
     end
+
+    def authenticate
+        token = request.headers['Authenticate']
+        user = User.find(decoded_token(token))
+
+        render json: { user: UserSerializer.new(user), token: token }
+    end
 end
