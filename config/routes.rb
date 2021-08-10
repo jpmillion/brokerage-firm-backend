@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       post 'auth/request', to:'users#google_oauth2'
+      get 'authenticate', to: 'sessions#authenticate'
       resources :sessions, only: :create
     end
   end
