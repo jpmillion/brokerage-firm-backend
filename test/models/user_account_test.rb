@@ -1,7 +1,8 @@
 require "test_helper"
 
 class UserAccountTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should not save without user or account type" do
+    account = UserAccount.new
+    assert_not account.save
+  end
 end
