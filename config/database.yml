@@ -59,6 +59,8 @@ test:
   <<: *default
   database: brokerage_firm_backend_test
 
+  port: 5433
+
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
